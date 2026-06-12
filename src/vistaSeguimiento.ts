@@ -96,7 +96,7 @@ export function renderizarSeguimiento(navCallback: (modulo: string) => void): vo
     </main>
     <footer>
       <strong>BecaULEAM · Módulo 3: Seguimiento de Solicitud</strong>
-      <address>Jandry Sánchez Murillo · IS-403 · ULEAM 2026-1</address>
+      <address>Jandry Sánchez Murillo ·  ULEAM 2026-1</address>
     </footer>
   `;
 
