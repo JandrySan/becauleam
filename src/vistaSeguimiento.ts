@@ -25,6 +25,7 @@ function navbar(activo: string): string {
   `;
 }
 
+// lee y muestra todas las tarjetas
 function renderizarTimeline(solicitud: Solicitud): string {
   const pasos: EstadoSolicitud[] = ["Recibida", "En revisión", "Aprobada"];
   const esRechazada = solicitud.estado === "Rechazada";
@@ -56,6 +57,7 @@ function renderizarTimeline(solicitud: Solicitud): string {
   `;
 }
 
+// Ver y cambiar el estado de todas las solicitudes del estudiante
 function renderizarSolicitudes(): string {
   const solicitudes = obtenerSolicitudes();
   if (solicitudes.length === 0) {
@@ -78,6 +80,7 @@ function renderizarSolicitudes(): string {
   `).join("");
 }
 
+// Ver las solicitudes con linea de tiempo 
 export function renderizarSeguimiento(navCallback: (modulo: string) => void): void {
   const app = document.getElementById("app")!;
 
@@ -103,6 +106,7 @@ export function renderizarSeguimiento(navCallback: (modulo: string) => void): vo
   bindNav(navCallback);
 }
 
+// ver y cambiar el estado de todas las solicitudes
 export function renderizarEncargado(navCallback: (modulo: string) => void): void {
   const app = document.getElementById("app")!;
 
